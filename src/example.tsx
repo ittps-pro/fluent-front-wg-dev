@@ -6,19 +6,19 @@ export const Default = (props: SelectProps) => {
   const selectId = useId();
   const [current, setCurrent] = React.useState(selectId);
 
-  const onchange = (i) => {
-    console.log(i);
-    setCurrent(i);
-  };
+  // const onchange = (i) => {
+  //   console.log(i);
+  //   setCurrent(i);
+  // };
 
   const save = (_ctx: { id: number; data: any }) => {
     let config = {
       url: "",
       body: _ctx.data,
       headers: {
-        "X-Action-Item-Id": _ctx.id
+        "X-Action-Item-Id": _ctx.id,
       },
-      method: "POST"
+      method: "POST",
     };
 
     // fetch()
