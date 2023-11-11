@@ -1,5 +1,6 @@
-const { Wg, wrapper } = require("wireguard-wrapper");
+// const { Wg, wrapper } = require("wireguard-wrapper");
 
+import { Wg } from "wireguard-wrapper";
 interface User {
   name: String;
   username: String;
